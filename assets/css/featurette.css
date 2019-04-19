@@ -1,6 +1,15 @@
 
 /* Featurettes
 ------------------------- */
+.row, .featurette
+{
+	max-width: 100%;
+}
+
+.featurette .col-md-7, .featurette .col-md-5
+{
+	padding-left: 50px;
+}
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */

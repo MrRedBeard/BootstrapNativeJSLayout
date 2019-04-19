@@ -18,4 +18,6 @@ main > .container
 .footer 
 {
 	margin-top: auto!important;
+	padding: 15px;
+	text-align: center;
 }
