@@ -11,4 +11,4 @@ Bootstrap 4 Native JS layout using static header and sticky footer
 ![Sticky Footer Static Nav](https://raw.githubusercontent.com/MrRedBeard/BootstrapNativeJSLayout/master/screenshots/1.JPG)
 ![Pricing Layout Example](https://raw.githubusercontent.com/MrRedBeard/BootstrapNativeJSLayout/master/screenshots/2.JPG)
 ![Dashboard Example](https://raw.githubusercontent.com/MrRedBeard/BootstrapNativeJSLayout/master/screenshots/3.JPG)
-![Banner Example](https://raw.githubusercontent.com/MrRedBeard/BootstrapNativeJSLayout/master/screenshots/4.JPG)
+![Banner Example](https://raw.githubusercontent.com/MrRedBeard/BootstrapNativeJSLayout/master/screenshots/4.jpg)
