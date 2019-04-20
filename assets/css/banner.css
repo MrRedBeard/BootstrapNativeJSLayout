@@ -1,0 +1,17 @@
+.banner 
+{
+    background: url(../../assets/img/banner.jpg)no-repeat 0px 0px !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    -ms-background-size: cover !important;
+    background-size: cover !important;
+	background-position: center; 
+	min-height: 800px;
+}
+.banner .container
+{
+	margin: 200px;
+	background-color: rgba(38, 12, 12, 0.46);
+	color: #fff;
+}
