@@ -1,4 +1,8 @@
-
+h1, h2, h3, h4, h5, h6
+{
+	width: auto;
+	display:inline-block; 
+}
 .bg-dark
 {
   background-color: #202326 !important;
