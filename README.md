@@ -2,6 +2,11 @@
 Bootstrap 4 Native JS layout using static header and sticky footer
 * No jQuery just pure native js.
 * Bootstrap 4
+* Sticky footer 
+* 100% height to fill page
+* Blog, Banner, Pricing, Carousel, Album, Checkout, Sign-in, Dashboard examples
+* Bootstrap components examples page
+* Forum layout example using bootstrap elements
 
 # Built using bootstrap native. 
 * [Bootstrap Native Github](https://github.com/thednp/bootstrap.native)
