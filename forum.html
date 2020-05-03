@@ -6,12 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/css/font-awesome.min.css">	
 	<link rel="stylesheet" href="./assets/css/sidebar.css">	
 	<link rel="stylesheet" href="./assets/css/dashboard.css">	
 	<link rel="stylesheet" href="./assets/css/carousel.css">
 	<link rel="stylesheet" href="./assets/css/banner.css">	
 	<link rel="stylesheet" href="./assets/css/blog.css">
 	<link rel="stylesheet" href="./assets/css/featurette.css">
+	<link rel="stylesheet" href="./assets/css/forum.css">
 	<link rel="stylesheet" href="./assets/css/marketing.css">
 	<link rel="stylesheet" href="./assets/css/sign-in.css">
 	<link rel="stylesheet" href="./assets/css/sticky-footer-navbar.css">
@@ -72,6 +74,7 @@
 	<main role="main" class="flex-shrink-0">
 		<div class="container">
 		
+		<!--Forum Category List-->
 		<div class="my-3 p-3 bg-white rounded shadow-sm">
 				<h6 class="pb-2 mb-0">Forum Category</h6>
 				
@@ -86,11 +89,11 @@
 										 <div class="media-body col-sm">
 											<h4><a href="#">Forum Title</a></h2>
 										 </div>
-										 <div class="text-muted small col-sm">
-											<div class="media-body w-50 float-right">
+										 <div class="text-muted small col-sm text-right">
 												<div>Latest Post <strong>01/1/2019</strong></div>
 												<div><strong>134</strong> threads</div>
-											</div>
+												<br />
+												<button type="button" class="btn btn-primary btn-sm">View Thread</button>
 										 </div>
 									 </div>
 								 </div>
@@ -103,7 +106,7 @@
 		
 		
 		
-		
+		<!--Forum Thread List-->
 		<div class="my-3 p-3 bg-white rounded shadow-sm">
 				<h6 class="pb-2 mb-0">Forum Thread Top</h6>
 				
@@ -115,25 +118,30 @@
 									 <div class="media flex-wrap w-100 align-items-center"> <img src="../../assets/img/profile.png" width="64" class="d-block ui-w-40 rounded-circle" alt="">
 										 <div class="media-body col-sm"> <a href="javascript:void(0)" data-abc="true">Tom Harry</a>
 											 <div class="text-muted small">13 days ago</div>
+											 <div class="badges text-left"><i class="fa fa-flag"></i><i class="fa fa-bell"></i><i class="fa fa-certificate"></i><i class="fa fa-circle"></i><i class="fa fa-trophy"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-half"></i><i class="fa fa-star-half-o"></i><i class="fa fa-heart"></i></div>
 										 </div>
 										 <div class="media-body col-sm">
 											<h4><a href="#">Thread Title</a></h2>
 										 </div>
-										 <div class="text-muted small col-sm">
-											<div class="media-body w-50 float-right">
-												<div>Last activity <strong>01/1/2019</strong></div>
-												<div><strong>3</strong> replies</div>
-											</div>
+										 <div class="text-muted small col-sm text-right">
+											<div>Last activity <strong>01/1/2019</strong></div>
+											<div><strong>3</strong> replies</div>
 										 </div>
 									 </div>
 								 </div>
 								 <div class="card-body">
 									 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra.....<a href="#">View Thread</a></p>
-								 </div>
+								 </div>								 
+								 
 								 <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pt-0 pb-3">
-									 <div class="px-4 pt-3"> <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle" data-abc="true"> <i class="fa fa-heart text-danger"></i>&nbsp; <span class="align-middle">445</span> </a> <span class="text-muted d-inline-flex align-items-center align-middle ml-4"> <i class="fa fa-eye text-muted fsize-3"></i>&nbsp; <span class="align-middle">14532</span> </span> </div>
-									 <div class="px-4 pt-3"> <button type="button" class="btn btn-primary"><i class="ion ion-md-create"></i>&nbsp; View Thread</button> </div>
+									<div class="col"> <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle" data-abc="true"> <i class="fa fa-heart"></i>&nbsp; <span class="align-middle">445</span> </a> <span class="text-muted d-inline-flex align-items-center align-middle ml-4"> <i class="fa fa-eye text-muted fsize-3"></i>&nbsp; <span class="align-middle">14532</span> </span> </div>
+									<div class="col-md-auto posted"> <i class="fa fa-clock-o"></i> Posted on : 20 Nov @ 9:45am </div>
+									<div class="col col-lg text-right">
+										<button type="button" class="btn btn-primary btn-sm">View Thread</button>
+									</div>
 								 </div>
+								 
+								 
 							 </div>
 						 </div>
 					 </div>
@@ -141,10 +149,11 @@
 				 
 		</div>
 			
-			
+			<!--Thread Body-->
 			<div class="my-3 p-3 bg-white rounded shadow-sm">
 				<h6 class="pb-2 mb-0">Forum Thread Discussion</h6>
 				
+				<!-- Thread Post -->
 				 <div class="container-fluid mt-100">
 					 <div class="row">
 						 <div class="col-md-12">
@@ -153,15 +162,14 @@
 									 <div class="media flex-wrap w-100 align-items-center"> <img src="../../assets/img/profile.png" width="64" class="d-block ui-w-40 rounded-circle" alt="">
 										 <div class="media-body col-sm"> <a href="javascript:void(0)" data-abc="true">Tom Harry</a>
 											 <div class="text-muted small">13 days ago</div>
+											 <div class="badges text-left"><i class="fa fa-flag"></i><i class="fa fa-bell"></i><i class="fa fa-certificate"></i><i class="fa fa-circle"></i><i class="fa fa-trophy"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-half"></i><i class="fa fa-star-half-o"></i><i class="fa fa-heart"></i></div>
 										 </div>
 										 <div class="media-body col-sm">
 											<h4>Thread Title</h2>
 										 </div>
-										 <div class="text-muted small col-sm">
-											<div class="media-body w-50 float-right">
-												<div>Member since <strong>01/1/2019</strong></div>
-												<div><strong>134</strong> posts</div>
-											</div>
+										 <div class="text-muted small col-sm text-right">
+											<div>Member since <strong>01/1/2019</strong></div>
+											<div><strong>134</strong> posts</div>
 										 </div>
 									 </div>
 								 </div>
@@ -169,15 +177,21 @@
 									 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra, leo eu ullamcorper egestas, est leo porta est, aliquet ullamcorper ipsum lorem sed felis. Duis suscipit eleifend pharetra. Sed rhoncus vitae diam ut egestas. Vivamus iaculis risus sed sem congue maximus. Donec ex quam, elementum a congue quis, fringilla et magna. Curabitur nibh mi, molestie non justo ut, tristique interdum purus. Vivamus a risus mattis risus fermentum bibendum non mattis lorem. Aenean nec porttitor orci, nec interdum lorem. Nam metus leo, convallis in diam sit amet, elementum ultrices nibh. Fusce vel scelerisque ligula, a tempor lectus. Mauris interdum efficitur finibus.</p>
 									 <p>Morbi non est risus. Nullam mollis est ut finibus mattis. Quisque facilisis sem sapien, vitae tempor odio dapibus in. Pellentesque ac venenatis lacus, sed fringilla felis. Suspendisse sodales facilisis lectus ut sodales. Pellentesque varius metus vel leo accumsan, suscipit sollicitudin lacus sagittis. In vitae maximus eros, sed lobortis lacus. Duis vitae justo ornare turpis aliquam bibendum. Curabitur turpis neque, auctor et dui sed, dignissim efficitur sem. Maecenas imperdiet interdum laoreet. Integer imperdiet risus in fermentum dictum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pretium interdum ante, nec aliquet arcu viverra et. Praesent eu arcu pharetra, posuere leo ut, eleifend libero.</p>
 								 </div>
-								 <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pt-0 pb-3">
-									 <div class="px-4 pt-3"> <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle" data-abc="true"> <i class="fa fa-heart text-danger"></i>&nbsp; <span class="align-middle">445</span> </a> <span class="text-muted d-inline-flex align-items-center align-middle ml-4"> <i class="fa fa-eye text-muted fsize-3"></i>&nbsp; <span class="align-middle">14532</span> </span> </div>
-									 <div class="px-4 pt-3"> <button type="button" class="btn btn-primary"><i class="ion ion-md-create"></i>&nbsp; Reply</button> </div>
+								 
+									 <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pt-0 pb-3">
+										<div class="col"> <a href="#" class="up"><i class="fa fa-thumbs-o-up"></i>10</a>&nbsp;&nbsp;&nbsp;<a href="#" class="down"><i class="fa fa-thumbs-o-down"></i>1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="reply"><i class="fa fa-reply"></i></a></div>
+										<div class="col-md-auto posted"> <i class="fa fa-clock-o"></i> Posted on : 20 Nov @ 9:45am </div>
+										<div class="col col-lg text-right">
+											<a href="#" class="flag"><i class="fa fa-flag"></i></a>
+										</div>
+									 </div>
+									 
 								 </div>
 							 </div>
 						 </div>
 					 </div>
-				 </div>
 				 
+				 <!-- Thread Reply -->
 				 <div class="container-fluid mt-100">
 					 <div class="row">
 						 <div class="col-md-12">
@@ -186,15 +200,14 @@
 									 <div class="media flex-wrap w-100 align-items-center"> <img src="../../assets/img/stockprofile.png" width="64" class="d-block ui-w-40 rounded-circle" alt="">
 										 <div class="media-body col-sm"> <a href="javascript:void(0)" data-abc="true">Tom Harry</a>
 											 <div class="text-muted small">13 days ago</div>
+											 <div class="badges text-left"><i class="fa fa-flag"></i><i class="fa fa-bell"></i><i class="fa fa-certificate"></i><i class="fa fa-circle"></i><i class="fa fa-trophy"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-half"></i><i class="fa fa-star-half-o"></i><i class="fa fa-heart"></i></div>
 										 </div>
 										 <div class="media-body col-sm">
 											<h4></h2>
 										 </div>
-										 <div class="text-muted small col-sm">
-											<div class="media-body w-50 float-right">
-												<div>Member since <strong>01/1/2010</strong></div>
-												<div><strong>134</strong> posts</div>
-											</div>
+										 <div class="text-muted small col-sm text-right">
+											<div>Member since <strong>01/1/2010</strong></div>
+											<div><strong>134</strong> posts</div>
 										 </div>
 									 </div>
 								 </div>
@@ -202,18 +215,17 @@
 									 <p>Fusce quis nisi sit amet velit mollis commodo. Donec tempor congue sapien eu blandit. Mauris efficitur mauris non dolor pretium congue. Nulla facilisis, elit nec molestie blandit, augue justo pellentesque nisl, ac interdum eros justo facilisis felis. Integer eros nulla, pellentesque in diam ac, semper porttitor mi. Nunc eget urna gravida, ultricies augue sed, fermentum eros. Duis feugiat tristique sollicitudin. Nam laoreet mollis mi, sit amet ornare nulla semper nec. Ut eget dolor libero. Mauris velit sem, fringilla et sem vel, gravida ultricies mi. Curabitur viverra, turpis vitae ornare rhoncus, elit ante fringilla augue, in feugiat odio odio ut mauris. Nullam vitae arcu eu quam tempor vulputate.</p>
 								 </div>
 								 <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pt-0 pb-3">
-									 <div class="px-4 pt-3"> <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle" data-abc="true"> <i class="fa fa-heart text-danger"></i>&nbsp; <span class="align-middle">445</span> </a> <span class="text-muted d-inline-flex align-items-center align-middle ml-4"> <i class="fa fa-eye text-muted fsize-3"></i>&nbsp; <span class="align-middle">14532</span> </span> </div>
-									 <div class="px-4 pt-3"> <button type="button" class="btn btn-primary"><i class="ion ion-md-create"></i>&nbsp; Reply</button> </div>
+									<div class="col"> <a href="#" class="up"><i class="fa fa-thumbs-o-up"></i>10</a>&nbsp;&nbsp;&nbsp;<a href="#" class="down"><i class="fa fa-thumbs-o-down"></i>1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="reply"><i class="fa fa-reply"></i></a></div>
+									<div class="col-md-auto posted"> <i class="fa fa-clock-o"></i> Posted on : 20 Nov @ 9:45am </div>
+									<div class="col col-lg text-right">
+										<a href="#" class="flag"><i class="fa fa-flag"></i></a>
+									</div>
 								 </div>
 							 </div>
 						 </div>
 					 </div>
 				 </div>
-				
-				<small class="d-block text-right mt-3">
-				  <a href="#">All Posts</a>
-				</small>
-			  </div>
+			</div>
 			
 			
 			
