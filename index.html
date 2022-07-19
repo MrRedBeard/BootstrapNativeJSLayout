@@ -1,132 +1,1265 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-	<title>Native JS Bootstrap</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="BootStrap Theme - Native JavaScript for Bootstrap v5.0">
+    <meta name="author" content="Britton Scritchfield">
+    <meta name="generator" content="My fingers">
+    <title>BootStrap Theme - Native JavaScript for Bootstrap v5.0</title>    
 
-	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/css/sidebar.css">	
-	<link rel="stylesheet" href="./assets/css/dashboard.css">	
-	<link rel="stylesheet" href="./assets/css/carousel.css">
-	<link rel="stylesheet" href="./assets/css/banner.css">	
-	<link rel="stylesheet" href="./assets/css/blog.css">
-	<link rel="stylesheet" href="./assets/css/featurette.css">
-	<link rel="stylesheet" href="./assets/css/marketing.css">
-	<link rel="stylesheet" href="./assets/css/sign-in.css">
-	<link rel="stylesheet" href="./assets/css/sticky-footer-navbar.css">
-	<link rel="stylesheet" href="./assets/css/theme.css">
-	
-	<!-- IE10+ still require polyfill -->
-	<script src="./assets/js/polyfill.min.js"></script>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/img/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/img/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#333333">
+    <link rel="icon" href="/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#333333">
+    <meta name="msapplication-config" content="/img/browserconfig.xml">
+    <meta name="theme-color" content="#333333">
 
-	</head>
-<body class="d-flex flex-column h-100">
+    <!-- BootStrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
 
-<header id="headnav">
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-		<a data-toggle="tooltip" data-placement="bottom" class="navbar-brand mr-0 mr-md-2" title="Native JavaScript for Bootstrap" class="navbar-brand" href="/">
-			<img src="./assets/img/apple-touch-icon.png" height="36" />
-			<span class="d-inline-block align-middle hidden-xs">Native JavaScript for Bootstrap</span>
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarCollapse">
-			<ul class="navbar-nav ml-auto mr-0">
-				<li class="nav-item"><a class="nav-link" href="index.html">index</a></li>
-				<li class="nav-item"><a class="nav-link" href="banner.html">banner</a></li>
-				<li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
-				<li class="nav-item"><a class="nav-link" href="forum.html">forum</a></li>
-				<li class="nav-item"><a class="nav-link" href="pricing.html">pricing</a></li>
-				<li class="nav-item"><a class="nav-link" href="carousel.html">carousel</a></li>
-				<li class="nav-item"><a class="nav-link" href="album.html">album</a></li>
-				<li class="nav-item"><a class="nav-link" href="checkout.html">checkout</a></li>
-				<li class="nav-item"><a class="nav-link" href="sign-in.html">sign-in</a></li>
-				<li class="nav-item"><a class="nav-link" href="dashboard.html">dashboard</a></li>
-				<li class="nav-item"><a class="nav-link" href="bootstrap.html">bootstrap</a></li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Github</a>
-					<ul class="dropdown-menu dropdown-menu-right">
-						<a class="dropdown-item" href="https://github.com/thednp/bootstrap.native/">Fork</a>
-						<a class="dropdown-item" href="https://github.com/thednp/bootstrap.native/wiki">Wiki</a>
-						<a class="dropdown-item" href="https://github.com/thednp/bootstrap.native/archive/master.zip">Download</a>
-					</ul>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Share</a>
-					<ul class="dropdown-menu dropdown-menu-right">
-						<a class="dropdown-item" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://thednp.github.io/bootstrap.native/index.html" title="Share Native JavaScript for Bootstrap on Facebook">Facebook</a>
-						<a class="dropdown-item" target="_blank" 
-						href="https://twitter.com/home?status=Spread the word about %23BootstrapNative by @dnp_theme and download here http://thednp.github.io/bootstrap.native/index.html" 
-						title="Share Native JavaScript for Bootstrap on Twitter">Twitter</a>
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="/css/pfi.css">
+    <script src="/js/pfi.js"></script>
 
-						<a class="dropdown-item" target="_blank" href="https://plus.google.com/share?url=http://thednp.github.io/bootstrap.native/index.html" title="Share Native JavaScript for Bootstrap on Google+">Google+</a>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</nav>
-</header>
+    <!-- Third Party -->
+    <script src="/js/chart.js"></script>
+    <script src="/js/chartjs-plugin-zoom.min.js"></script>
 
-	<main role="main" class="flex-shrink-0">
-		<div class="container">
-			<h1 class="mt-5">Sticky footer with fixed navbar</h1>
-			<p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>main &gt; .container</code>.</p>
-			
-			
-			
-			
-		</div>
-	</main>
-	
-	<footer class="footer mt-auto py-3 bg-dark">
-		<div class="container">
-			<p class="float-right"><a href="#headnav">Back to top</a></p>
-		</div>
-		<div class="row">
-		  <div class="col-12 col-md">
-			<span class="text-muted">Native JS Bootstrap Footer</span>
-			<small class="d-block mb-3 text-muted">© 2017-2019</small>
-		  </div>
-		  <div class="col-6 col-md">
-			<h5>Features</h5>
-			<ul class="list-unstyled text-small">
-			  <li><a class="text-muted" href="#">Cool stuff</a></li>
-			  <li><a class="text-muted" href="#">Random feature</a></li>
-			  <li><a class="text-muted" href="#">Team feature</a></li>
-			  <li><a class="text-muted" href="#">Stuff for developers</a></li>
-			  <li><a class="text-muted" href="#">Another one</a></li>
-			  <li><a class="text-muted" href="#">Last time</a></li>
-			</ul>
-		  </div>
-		  <div class="col-6 col-md">
-			<h5>Resources</h5>
-			<ul class="list-unstyled text-small">
-			  <li><a class="text-muted" href="#">Resource</a></li>
-			  <li><a class="text-muted" href="#">Resource name</a></li>
-			  <li><a class="text-muted" href="#">Another resource</a></li>
-			  <li><a class="text-muted" href="#">Final resource</a></li>
-			</ul>
-		  </div>
-		  <div class="col-6 col-md">
-			<h5>About</h5>
-			<ul class="list-unstyled text-small">
-			  <li><a class="text-muted" href="#">Team</a></li>
-			  <li><a class="text-muted" href="#">Locations</a></li>
-			  <li><a class="text-muted" href="#">Privacy</a></li>
-			  <li><a class="text-muted" href="#">Terms</a></li>
-			</ul>
-		  </div>
-		</div>
-	</footer>
+    <!-- BootStrap JS -->
+    <script src="/js/bootstrap-native.js"></script>
+    <script src="/js/theme.js"></script>
+  </head>
+  <body>
 
-	<script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript" src="./assets/js/bootstrap-native-v4.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-	<script src="./assets/js/scripts4.js"></script>
-</body>
+    <header>
+        <nav class="main-menu navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="/img/logo.png" width="32">
+                    &nbsp;Standard Layout
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="pfi-hamburger is-6"></i>
+                </button>
+                <div class="collapse navbar-collapse bg-dark text-end" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/font-icons.html">Font Icons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#carousel">Carousel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown07">
+                              <li><a class="dropdown-item" href="#hero">Hero</a></li>
+                              <li><a class="dropdown-item" href="#jumbotron">JumboTron</a></li>
+                              <li><a class="dropdown-item" href="#chart">Charts</a></li>
+                              <li><a class="dropdown-item toggleSideMenuOff" href="#">Side Menu Toggle</a></li>
+                              <script>
+                                document.querySelector('.toggleSideMenuOff').addEventListener('click', () =>
+                                {
+                                    document.querySelector('.side-menu-wrapper').classList.toggle('d-none');
+                                });
+                              </script>
+                            </ul>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link link-light text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <image src="/img/profile.jpg" alt="profile" width="32" height="32" class="rounded-circle">
+                            </a>
+                            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                                <li class="">
+                                    <a class="dropdown-item" href="#">Sign-up</a>
+                                </li>
+                                <li class="">
+                                    <a class="dropdown-item" href="#">Login</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Sign out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex search" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-dark btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="side-menu-wrapper bg-dark text-light p-2">
+            <div class="side-menu navbar-dark p-1 collapsed">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item text-end">
+                        <a class="link-light nav-link side-menu-control" role="button">
+                            <i class="pfi-hamburger is-6"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="pfi-home is-6"></i><span class="link-text ms-2">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="pfi-gears is-6"></i><span class="link-text ms-2">Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="pfi-chart-pie is-6"></i><span class="link-text ms-2">Reports</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="pfi-pulse is-6"></i><span class="link-text ms-2">Status</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="row">
+                <div class="col-12 m-0">
+                    <h1>Title</h1>
+                    <p>BootStrap no jQuery. Using Native JavaScript for BootStrap 5, Chart.JS </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-12">
+                    <h1 id="carousel">Carousel Example - this can go anywhere on the page</h1>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/img/carouselTemplate1.jpg" alt="... Slide 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/img/carouselTemplate2.jpg" alt="... Slide 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/img/carouselTemplate3.jpg" alt="... Slide 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <h1 id="blog">Blog Example</h1>
+                <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark blog-post-featured-top w-100" style="background-image: url('/img/carouselTemplate3.jpg');">
+                    <div class="col-md-6 px-0">
+                        <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
+                        <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+                        <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+                    </div>
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-primary">World</strong>
+                                <h3 class="mb-0">Featured post</h3>
+                                <div class="mb-1 text-muted">Nov 12</div>
+                                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="stretched-link">Continue reading</a>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <div class="blog-post-featured-thumbnail-container">
+                                    <img class="blog-post-featured-thumbnail" src="/img/blog-article-thumbnail.jpg" alt="... Thumbnail">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-success">Design</strong>
+                                <h3 class="mb-0">Post title</h3>
+                                <div class="mb-1 text-muted">Nov 11</div>
+                                <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="stretched-link">Continue reading</a>
+                            </div>
+                            <div class="blog-post-featured-thumbnail-container col-auto d-none d-lg-block">
+                                <div class="blog-post-featured-thumbnail-container">
+                                    <img class="blog-post-featured-thumbnail" src="/img/blog-article-thumbnail.jpg" alt="... Thumbnail">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <article class="blog-post">
+                        <img class="blog-post-thumbnail" src="/img/logo.png">
+                        <h2 class="blog-post-title">Sample blog post</h2>
+                        <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+
+                        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+                        <hr>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <h2>Blockquotes</h2>
+                        <p>This is an example blockquote in action:</p>
+                        <blockquote class="blockquote">
+                            <p>Quoted text goes here.</p>
+                        </blockquote>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <h3>Example lists</h3>
+                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+                        <ul>
+                            <li>First list item</li>
+                            <li>Second list item with a longer description</li>
+                            <li>Third list item to close it out</li>
+                        </ul>
+                        <p>And this is an ordered list:</p>
+                        <ol>
+                            <li>First list item</li>
+                            <li>Second list item with a longer description</li>
+                            <li>Third list item to close it out</li>
+                        </ol>
+                        <p>And this is a definiton list:</p>
+                        <dl>
+                            <dt>HyperText Markup Language (HTML)</dt>
+                            <dd>The language used to describe and define the content of a Web page</dd>
+                            <dt>Cascading Style Sheets (CSS)</dt>
+                            <dd>Used to describe the appearance of Web content</dd>
+                            <dt>JavaScript (JS)</dt>
+                            <dd>The programming language used to build advanced Web sites and applications</dd>
+                        </dl>
+                        <h2>Inline HTML elements</h2>
+                        <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+                        <ul>
+                            <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+                            <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+                            <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+                            <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+                            <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+                            <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+                        </ul>
+                        <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+                        <h2>Heading</h2>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <h3>Sub-heading</h3>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <pre><code>Example code block</code></pre>
+                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                    </article>
+
+                    <article class="blog-post">
+                        <h2 class="blog-post-title">New feature</h2>
+                        <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <ul>
+                            <li>First list item</li>
+                            <li>Second list item with a longer description</li>
+                            <li>Third list item to close it out</li>
+                        </ul>
+                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                    </article>
+
+                    <article class="blog-post">
+                        <img class="blog-post-thumbnail" src="/img/blog-article-thumbnail.jpg">
+                        <h2 class="blog-post-title">New feature</h2>
+                        <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <ul>
+                            <li>First list item</li>
+                            <li>Second list item with a longer description</li>
+                            <li>Third list item to close it out</li>
+                        </ul>
+                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-side-menu">
+                        <div class="p-4 mb-3 bg-light rounded">
+                            <h4 class="fst-italic">About</h4>
+                            <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+                        </div>
+
+                        <div class="p-4">
+                            <h4 class="fst-italic">Archives</h4>
+                            <ol class="list-unstyled mb-0">
+                                <li><a href="#">March 2021</a></li>
+                                <li><a href="#">February 2021</a></li>
+                                <li><a href="#">January 2021</a></li>
+                                <li><a href="#">December 2020</a></li>
+                                <li><a href="#">November 2020</a></li>
+                                <li><a href="#">October 2020</a></li>
+                                <li><a href="#">September 2020</a></li>
+                                <li><a href="#">August 2020</a></li>
+                                <li><a href="#">July 2020</a></li>
+                                <li><a href="#">June 2020</a></li>
+                                <li><a href="#">May 2020</a></li>
+                                <li><a href="#">April 2020</a></li>
+                            </ol>
+                        </div>
+
+                        <div class="p-4">
+                            <h4 class="fst-italic">Elsewhere</h4>
+                            <ol class="list-unstyled">
+                                <li><a href="#">GitHub</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Facebook</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h1 id="hero">Hero Examples</h1>
+            <div class="col-12 px-4 py-5">
+                <div class="row align-items-center g-5 py-5 rounded-3 border shadow-lg">
+                  <div class="col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <img src="/img/hero-image.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                  </div>
+                  <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
+                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                      <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                      <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="col-12 px-4 py-5">
+                <div class="row align-items-center g-5 py-5 rounded-3 border shadow-lg bg-dark text-light">
+                  <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
+                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                      <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                      <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <img src="/img/hero-image2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                  </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h1 id="jumbotron">JumboTron Card Example</h1>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card text-white bg-dark rounded-3">
+                        <img class="card-img" src="/img/hero-image2.jpg" alt="Bootstrap Themes">
+                        <div class="card-img-overlay overflow-auto">
+                            <h2 class="card-title">Change the background</h2>
+                            <p class="card-text">Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                            <button class="btn btn-outline-light" type="button">Example button</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h1 id="card">Card Examples</h1>
+            <div class="row">
+                
+                <div class="col-12 col-sm-6 col-md-5 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-5 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="card">
+                        <img src="/img/logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-5 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="card">
+                        <img class="card-img" src="/img/logo.png" alt="Bootstrap Themes">
+                        <div class="card-img-overlay">
+                            <h2 class="card-title">Change the background</h2>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-8 col-md-8 col-lg-5 col-xl-5 col-xxl-5">
+                    <div class="card">
+                        <div class="row g-0">
+                          <div class="col-md-4 bg-dark">
+                            <img src="/img/logo.png" class="align-middle img-fluid rounded-start py-3" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-8">
+                    <h1 id="chart">Chart Example</h1>
+                    <canvas class="myChart"></canvas>
+                    <button class="btn btn-secondary resetChartZoom">Reset Zoom</button>
+                    <button class="btn btn-secondary updateChart">Update Chart</button>
+                    <button class="btn btn-secondary removeDataFromChart">Remove Data From Chart</button>
+                    <script>
+                        let chartData = [
+                            {
+                                'month': 'January',
+                                'value': 0
+                            },
+                            {
+                                'month': 'February',
+                                'value': 10
+                            },
+                            {
+                                'month': 'March',
+                                'value': 5
+                            },
+                            {
+                                'month': 'April',
+                                'value': 2
+                            },
+                            {
+                                'month': 'May',
+                                'value': 20
+                            },
+                            {
+                                'month': 'June',
+                                'value': 30
+                            },
+                            {
+                                'month': 'July',
+                                'value': 45
+                            },
+                        ];
+
+                        let labels = chartData.map(function(e) 
+                        {
+                            return e.month;
+                        });
+                        let values = chartData.map(function(e) 
+                        {
+                            return e.value;
+                        });
+
+                        let data = {
+                                labels: labels,
+                                datasets: [{
+                                label: 'My First dataset',
+                                backgroundColor: 'rgb(255, 99, 132)',
+                                borderColor: 'rgb(255, 99, 132)',
+                                data: values,
+                                }]
+                            };
+
+                        let chartConfig = {
+                            type: 'line',
+                            // type: 'bar',
+                            // type: 'doughnut',
+                            // type: 'radar',
+                            data: data,
+                            options: {
+                                responsive: true,
+                                plugins: {
+                                    legend: {
+                                        display: true,
+                                        labels: {
+                                            color: 'rgb(255, 99, 132)'
+                                        }
+                                    },
+                                    zoom: {
+                                        zoom: {
+                                            wheel: {
+                                                enabled: true,
+                                            },
+                                            pinch: {
+                                                enabled: true
+                                            },
+                                            mode: 'xy'
+                                        }
+                                    },
+                                    beforeDraw: (chart, args, options) =>
+                                    {
+                                        myChart.resetZoom();
+                                    }
+                                },
+                                scales: {
+                                    y: { // defining min and max so hiding the dataset does not change scale range
+                                        min: 0,
+                                        max: 50
+                                    }
+                                }
+                            }
+                        };
+
+
+                        const myChart = new Chart(
+                            document.querySelector('.myChart'),
+                            chartConfig
+                        );
+
+                        document.querySelector('.resetChartZoom').addEventListener('click', () => 
+                        {
+                            myChart.resetZoom();
+                        });
+
+                        document.querySelector('.updateChart').addEventListener('click', () => 
+                        {
+                            let newData = {
+                                'month': 'August',
+                                'value': 20
+                            };
+
+                            chartData.push(newData);
+
+                            labels = chartData.map(function(e) 
+                            {
+                                return e.month;
+                            });
+                            values = chartData.map(function(e) 
+                            {
+                                return e.value;
+                            });
+
+                            data = {
+                                labels: labels,
+                                datasets: [{
+                                label: 'My First dataset',
+                                backgroundColor: 'rgb(255, 99, 132)',
+                                borderColor: 'rgb(255, 99, 132)',
+                                data: values,
+                                }]
+                            };
+
+                            myChart.data = data;
+
+                            myChart.update();
+                        });
+
+                        document.querySelector('.removeDataFromChart').addEventListener('click', () =>
+                        {
+                            myChart.data.labels.pop();
+                            myChart.data.datasets.forEach((dataset) => {
+                                dataset.data.pop();
+                            });
+                            myChart.update();
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-12">
+                    <h1>Pagination</h1>
+                    <nav aria-label="Another pagination example">
+                        <ul class="pagination pagination-lg flex-wrap">
+                          <li class="page-item disabled">
+                            <a class="page-link">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-12">
+                    <h1>Dropdown Menu</h1>
+                    <div class="dropdown">
+                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-dark m-0" aria-labelledby="dropdownMenuButton1">
+                            <form class="p-2 mb-2 bg-dark border-bottom border-dark">
+                                <input type="search" class="form-control form-control-dark" autocomplete="false" placeholder="Type to filter...">
+                            </form>
+                            <ul class="list-unstyled mb-0">
+                                <li><h6 class="dropdown-header">Dropdown header</h6></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <style>
+                    .icons
+                    {
+                        max-height: 400px;
+                        overflow-y: scroll;
+                    }
+                    .icons i
+                    {
+                        display: inline-block;
+                    }
+                </style>
+                <div class="col-8 icons">
+                    <h2>Icons</h2>
+                    <script>
+                        let icons = Object.keys(pfi);
+                        icons.forEach((icon) => 
+                        {
+                            let i = document.createElement('i');
+                            i.classList.add(icon)
+                            document.querySelector('.icons').appendChild(i);
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <div class="row">
+                <br><br>
+                <div class="col-8">
+                    <h2>Icon Sizes</h2>
+                    <div class="row text-center align-items-start icon-sizes">
+                        <div class="col-3"><i class="pfi-badge"></i>No Size</div>
+                        <script>
+                            let ictr = 1;
+                            while(ictr < 21)
+                            {
+                                let div = document.createElement('div');
+                                div.classList.add('col-3');
+                                div.innerHTML = '<i class="pfi-badge is-' + ictr + '"></i>is-' + ictr;
+                                document.querySelector('.icon-sizes').appendChild(div);
+                                ictr++;
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="col-4 align-self-center text-center">
+                        <h1>Login Form</h1>
+                        <img class="mb-4" src="/img/logo.png" alt="" width="72" height="72">
+                        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+                    
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                    
+                        <div class="checkbox mb-3">
+                            <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                        <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+                    </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="w-50 align-self-center">
+                    <h1 class="display-4 fw-normal">Pricing</h1>
+                    <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 mt-5 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Free</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>10 users included</li>
+                                <li>2 GB of storage</li>
+                                <li>Email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Pro</h4>
+                    </div>
+                    <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                    <li>20 users included</li>
+                    <li>10 GB of storage</li>
+                    <li>Priority email support</li>
+                    <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Enterprise</h4>
+                    </div>
+                    <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                    <li>30 users included</li>
+                    <li>15 GB of storage</li>
+                    <li>Phone and email support</li>
+                    <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 align-self-center">
+                    <h1>Form Example</h1>
+                    <form class="needs-validation" novalidate="">
+                        <div class="row g-3">
+                          <div class="col-sm-6">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                              Valid first name is required.
+                            </div>
+                          </div>
+              
+                          <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                              Valid last name is required.
+                            </div>
+                          </div>
+              
+                          <div class="col-12">
+                            <label for="username" class="form-label">Username</label>
+                            <div class="input-group has-validation">
+                              <span class="input-group-text">@</span>
+                              <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                            <div class="invalid-feedback">
+                                Your username is required.
+                              </div>
+                            </div>
+                          </div>
+              
+                          <div class="col-12">
+                            <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <div class="invalid-feedback">
+                              Please enter a valid email address for shipping updates.
+                            </div>
+                          </div>
+              
+                          <div class="col-12">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                            <div class="invalid-feedback">
+                              Please enter your shipping address.
+                            </div>
+                          </div>
+              
+                          <div class="col-12">
+                            <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                          </div>
+              
+                          <div class="col-md-5">
+                            <label for="country" class="form-label">Country</label>
+                            <select class="form-select" id="country" required="">
+                              <option value="">Choose...</option>
+                              <option>United States</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              Please select a valid country.
+                            </div>
+                          </div>
+              
+                          <div class="col-md-4">
+                            <label for="state" class="form-label">State</label>
+                            <select class="form-select" id="state" required="">
+                              <option value="">Choose...</option>
+                              <option>California</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              Please provide a valid state.
+                            </div>
+                          </div>
+              
+                          <div class="col-md-3">
+                            <label for="zip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Zip code required.
+                            </div>
+                          </div>
+                        </div>
+              
+                        <hr class="my-4">
+              
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="same-address">
+                          <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+                        </div>
+              
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="save-info">
+                          <label class="form-check-label" for="save-info">Save this information for next time</label>
+                        </div>
+              
+                        <hr class="my-4">
+              
+                        <h4 class="mb-3">Payment</h4>
+              
+                        <div class="my-3">
+                          <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                            <label class="form-check-label" for="credit">Credit card</label>
+                          </div>
+                          <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                            <label class="form-check-label" for="debit">Debit card</label>
+                          </div>
+                          <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                            <label class="form-check-label" for="paypal">PayPal</label>
+                          </div>
+                        </div>
+              
+                        <div class="row gy-3">
+                          <div class="col-md-6">
+                            <label for="cc-name" class="form-label">Name on card</label>
+                            <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                            <small class="text-muted">Full name as displayed on card</small>
+                            <div class="invalid-feedback">
+                              Name on card is required
+                            </div>
+                          </div>
+              
+                          <div class="col-md-6">
+                            <label for="cc-number" class="form-label">Credit card number</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Credit card number is required
+                            </div>
+                          </div>
+              
+                          <div class="col-md-3">
+                            <label for="cc-expiration" class="form-label">Expiration</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Expiration date required
+                            </div>
+                          </div>
+              
+                          <div class="col-md-3">
+                            <label for="cc-cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Security code required
+                            </div>
+                          </div>
+                        </div>
+              
+                        <hr class="my-4">
+              
+                        <button class="btn btn-primary btn-lg float-end" type="submit">Continue to checkout</button>
+                      </form>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-12">
+                    <h1>Table Example</h1>
+
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">Order #</th>
+                            <th scope="col">What</th>
+                            <th scope="col">When</th>
+                            <th scope="col">State</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="table-active">
+                            <th scope="row">1</th>
+                            <td>Wacky Waving Inflatable Tube Guy</td>
+                            <td>3/5/2022</td>
+                            <td>OR</td>
+                          </tr>
+                          <tr class="">
+                            <th scope="row">2</th>
+                            <td>Rubber Duck</td>
+                            <td>6/21/2022</td>
+                            <td>TX</td>
+                          </tr>
+                          <tr class="table-danger">
+                            <th scope="row">3</th>
+                            <td class="table-active">Rubber Chicken</td>
+                            <td>8/3/2022</td>
+                            <td>MT</td>
+                          </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h1>Gallery Example</h1>
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="card-img-top" width="100%" src="/img/photo1.jpg" aria-label="Photo">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="card-img-top" width="100%" src="/img/photo2.jpg" aria-label="Photo">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="card-img-top" width="100%" src="/img/photo3.jpg" aria-label="Photo">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="card-img-top" width="100%" src="/img/photo3.jpg" aria-label="Photo">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="card-img-top" width="100%" src="/img/photo1.jpg" aria-label="Photo">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="card-img-top" width="100%" src="/img/photo2.jpg" aria-label="Photo">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-12">
+                    <h1>Forums Layout</h1>
+
+                    <h3>Forum List</h3>
+                    <div class="container border border-gray-300 rounded">
+                        <div class="row border-bottom border-gray-200 p-2 align-items-center">
+                            <div class="col-1"><div class="forum-icon"> <i class="pfi-bullhorn is-6"></i></div></div>
+                            <div class="col-md-8"><a href="#" class="forum-item-title">Announcements</a><div class="forum-sub-title">Latest information.</div></div>
+                            <div class="col-md-1 forum-info"> <span class="views-number"> 3126 </span><div> <small>Views</small></div></div>
+                            <div class="col-md-1 forum-info"> <span class="views-number"> 318 </span><div> <small>Topics</small></div></div>
+                            <div class="col-md-1 forum-info"> <span class="views-number"> 120 </span><div> <small>Posts</small></div></div>
+                        </div>
+                        <div class="row border-bottom border-gray-200 p-2 align-items-center">
+                            <div class="col-1"><div class="forum-icon"> <i class="pfi-light-bulb-lit is-6"></i></div></div>
+                            <div class="col-md-8"><a href="#" class="forum-item-title">Ideas</a><div class="forum-sub-title">Community shared ideas.</div></div>
+                            <div class="col-md-1 forum-info"> <span class="views-number"> 2024 </span><div> <small>Views</small></div></div>
+                            <div class="col-md-1 forum-info"> <span class="views-number"> 256 </span><div> <small>Topics</small></div></div>
+                            <div class="col-md-1 forum-info"> <span class="views-number"> 128 </span><div> <small>Posts</small></div></div>
+                        </div>
+                        <div class="row p-2 align-items-center">
+                            <div class="col-1"><div class="forum-icon"> <i class="pfi-wx-lightning is-6"></i></div></div>
+                            <div class="col-md-8"><a href="#" class="forum-item-title">Actions</a><div class="forum-sub-title">What's happening, what needs to happen, what will happen.</div></div>
+                            <div class="col-md-1 forum-info"> <span class="views-number"> 615 </span><div> <small>Views</small></div></div>
+                            <div class="col-md-1 forum-info"> <span class="views-number"> 12 </span><div> <small>Topics</small></div></div>
+                            <div class="col-md-1 forum-info"> <span class="views-number"> 140 </span><div> <small>Posts</small></div></div>
+                        </div>
+                    </div>
+
+                    <h3>Thread List</h3>
+                    <div class="container border border-gray-300 rounded">
+                        <div class="row border-bottom border-gray-200 p-2 align-items-center">
+                            <div class="col-1"><div class="forum-icon"> <img class="rounded border border-dark p-2" height="40px" src="/img/profile.jpg"> </div></div>
+                            <div class="col-md-7"><a href="#" class="forum-item-title">I built a thing</a><div class="forum-sub-title">I built this thing, isn't it cool.</div></div>
+                            <div class="col-md-1 forum-info"> <span class="views-number"> 13 </span><div> <small>Posts</small></div></div>
+                            <div class="col-md-1 forum-info"> <span class="views-number"> 120 </span><div> <small>Views</small></div></div>
+                            <div class="col-md-2 forum-info"> <span class="views-number"> 3 mins ago </span><div> <small>Last Post</small></div></div>
+                        </div>
+                        <div class="row border-bottom border-gray-200 p-2 align-items-center">
+                            <div class="col-1"><div class="forum-icon"> <img class="rounded border border-dark p-2" height="40px" src="/img/profile.jpg"> </div></div>
+                            <div class="col-md-7"><a href="#" class="forum-item-title">I found a bug</a><div class="forum-sub-title">When I click the button and hold my tounge this way it breaks.</div></div>
+                            <div class="col-md-1 forum-info"> <span class="views-number"> 13 </span><div> <small>Posts</small></div></div>
+                            <div class="col-md-1 forum-info"> <span class="views-number"> 120 </span><div> <small>Views</small></div></div>
+                            <div class="col-md-2 forum-info"> <span class="views-number"> 2 hrs ago </span><div> <small>Last Post</small></div></div>
+                        </div>
+                        <div class="row p-2 align-items-center">
+                            <div class="col-1"><div class="forum-icon"> <img class="rounded border border-dark p-2" height="40px" src="/img/profile.jpg"> </div></div>
+                            <div class="col-md-7"><a href="#" class="forum-item-title">I love this app</a><div class="forum-sub-title">Take all my money.</div></div>
+                            <div class="col-md-1 forum-info"> <span class="views-number"> 13 </span><div> <small>Posts</small></div></div>
+                            <div class="col-md-1 forum-info"> <span class="views-number"> 120 </span><div> <small>Views</small></div></div>
+                            <div class="col-md-2 forum-info"> <span class="views-number"> 5 days ago </span><div> <small>Last Post</small></div></div>
+                        </div>
+                    </div>
+
+                    <h3>Thread</h3>
+                    <div class="container">
+                        
+                        <div class="row">
+                            <div class="card p-0">
+                                <div class="card-header w-100">
+                                    <div class="col-1"><img class="rounded border border-dark p-2" height="40px" src="/img/profile.jpg"></div>
+                                    <div class="col-md-11">I built a thing<div class="forum-sub-title">I built this thing, isn't it cool.</div></div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            What do you think of this thing I built?
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 text-end">
+                                            <a href="#">Reply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ps-3">
+                            <div class="card p-0">
+                                <div class="card-header">
+                                    <div class="col-1"><img class="rounded border border-dark p-2" height="40px" src="/img/profile.jpg"></div>
+                                    <div class="col-md-11">Re: I built a thing<div class="forum-sub-title">I built this thing, isn't it cool.</div></div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            That's pretty sweet! What did you use for that widget?
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 text-end">
+                                            <a href="#">Reply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="main-footer py-3 bg-dark">
+            <div class="d-flex flex-wrap justify-content-between align-items-center text-light">
+                <div class="col-6">
+                    <p class="text-center">Some other footer content</p>
+                </div>
+                <div class="col-6">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 link-light"><i class="pfi-social-facebook fs-5"></i></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 link-light"><i class="pfi-social-reddit fs-5"></i></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 link-light"><i class="pfi-social-twitter fs-5"></i></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 link-light"><i class="pfi-social-stackoverflow fs-5"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between align-items-center text-light">
+                <div class="col-12">
+                    <p class="text-center">© 2022 Company, Inc</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- <footer class="main-footer py-3 bg-dark">
+        <div class="d-flex flex-wrap justify-content-between align-items-center text-light">
+            <div class="col-6">
+                <p class="text-center">Some other footer content</p>
+            </div>
+            <div class="col-6">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 link-light"><i class="pfi-social-facebook fs-5"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 link-light"><i class="pfi-social-reddit fs-5"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 link-light"><i class="pfi-social-twitter fs-5"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 link-light"><i class="pfi-social-stackoverflow fs-5"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-between align-items-center text-light">
+            <div class="col-12">
+                <p class="text-center">© 2022 Company, Inc</p>
+            </div>
+        </div>
+    </footer> -->
+
+    
+
+  </body>
 </html>
 
 

@@ -1,0 +1,39 @@
+//
+// Custom Check/radio Dark (B/W)
+//
+
+  .form-check-input-dark {
+    background-color: $gray-med;
+    box-shadow: none;
+    border: none;
+    color: $gray !important;
+
+    &:active {
+      border: none;
+      box-shadow: none;
+      box-shadow: none;
+      color: $light !important;
+    }
+  
+    &:focus {
+    //   background-color: $gray;
+      border: none;
+      box-shadow: none;
+      box-shadow: none;
+      color: $light !important;
+    }
+  
+    &:checked {
+      border: none;
+      box-shadow: none;
+      background-color: $gray;
+      color: $dark !important;
+    }
+  
+    &[type="checkbox"]:indeterminate {
+      background-color: $dark;
+      box-shadow: none;
+      border: none;
+      color: $light !important;
+    }
+  }

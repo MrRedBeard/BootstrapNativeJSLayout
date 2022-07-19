@@ -1,0 +1,47 @@
+.blog-post-featured-top
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blog-post-featured-thumbnail-container
+{
+    text-align: center;
+    overflow: hidden;
+    width: 200px;
+    height: 250px;
+}
+.blog-post-featured-thumbnail
+{
+    max-height: 100%;
+}
+.blog-post 
+{
+    margin-bottom: 4rem;
+}
+.blog-post-thumbnail
+{
+    max-width: 8rem;
+    max-height: 8rem;
+}
+.blog-post .blog-post-thumbnail
+{
+    float: left;
+    margin: .5rem;
+}
+.blog-post .blog-post-title 
+{
+    margin-bottom: 0.25rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.blog-post .blog-post-meta
+{
+    margin-bottom: 1.25rem;
+    color: $gray-600;
+}
+.blog-side-menu
+{
+    top: 2rem;
+    position: -webkit-sticky!important;
+    position: sticky!important;
+}

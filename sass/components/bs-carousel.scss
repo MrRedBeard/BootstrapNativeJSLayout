@@ -1,0 +1,14 @@
+.carousel
+{
+    height: 512px !important;
+}
+.carousel .carousel-inner
+{
+    height: 100% !important;
+}
+.carousel .carousel-inner .carousel-item img
+{
+    display: block;
+    height: auto;
+    width: 100%;
+}

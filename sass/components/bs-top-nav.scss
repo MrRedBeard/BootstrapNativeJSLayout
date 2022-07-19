@@ -1,0 +1,20 @@
+nav.main-menu
+{
+    min-width: 100%;
+    position: absolute;
+    top: 0 !important;
+    z-index: 9;
+}
+nav.main-menu.main-menu
+{
+  height: $main-menu-height;
+  margin: 0 !important;
+}
+nav.main-menu.main-menu .navbar-toggler.collapsed + nav.main-menu.main-menu .navbar-collapse.collapse.show
+{
+    padding: 0;
+}
+nav.main-menu.main-menu .navbar-collapse.collapse.show
+{
+    padding: 1.5rem;
+}

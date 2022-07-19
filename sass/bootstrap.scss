@@ -1,0 +1,354 @@
+/*!
+ * Custom Bootstrap Theme 1.0.0
+ * Orignal Base is Bootstrap v5.1.3 (https://getbootstrap.com/)
+ */
+
+ // scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+// scss-docs-start color-variables
+$blue:    #0d6efd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #198754 !default;
+$teal:    #20c997 !default;
+$cyan:    #0dcaf0 !default;
+
+// scss-docs-start theme-color-variables
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+
+//Custom Colors & Override Colors
+$light: #eee;
+$dark: #1f1f1f;
+$gray-light: #bfbfbf;
+$gray-med: #666666;
+$gray-dark: #333333;
+$gray: $gray-500;
+
+// scss-docs-start colors-map
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+) !default;
+
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "white": $white,
+  "gray-light": $gray-light,
+  "gray-dark": $gray-dark,
+
+  //Custom Colors
+  "gray": $gray,
+  "gray-med": $gray-med,
+  "black": $black
+) !default;
+
+//Required Libraries
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/utilities";
+
+//Fonts
+$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-arial:      arial !default;
+$font-family-base:       $font-family-arial !default;
+
+$font-size-root:    null;
+$font-size-base:    1rem; // Assumes the browser default, typically `16px`
+
+$h1-font-size:      $font-size-base * 2.5;
+$h2-font-size:      $font-size-base * 2;
+$h3-font-size:      $font-size-base * 1.75;
+$h4-font-size:      $font-size-base * 1.5;
+$h5-font-size:      $font-size-base * 1.25;
+$h6-font-size:      $font-size-base * 1.1;
+
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          500;
+$font-weight-bold:            600;
+$font-weight-bolder:          700;
+
+$icon-size-1: $font-size-base    * .5;
+$icon-size-2: $font-size-base    * .8;
+$icon-size-3: $font-size-base    * 1;
+$icon-size-4: $font-size-base    * 1.25;
+$icon-size-5: $font-size-base    * 1.5;
+$icon-size-6: $font-size-base    * 1.75;
+$icon-size-7: $font-size-base    * 2;
+$icon-size-8: $font-size-base    * 2.25;
+$icon-size-9: $font-size-base    * 2.5;
+$icon-size-10: $font-size-base   * 2.75;
+$icon-size-11: $font-size-base   * 3;
+$icon-size-12: $font-size-base   * 3.25;
+$icon-size-13: $font-size-base   * 3.5;
+$icon-size-14: $font-size-base   * 3.75;
+$icon-size-15: $font-size-base   * 4;
+$icon-size-16: $font-size-base   * 5;
+$icon-size-17: $font-size-base   * 6;
+$icon-size-18: $font-size-base   * 7;
+$icon-size-19: $font-size-base   * 8;
+$icon-size-20: $font-size-base   * 9;
+$icon-size-21: $font-size-base   * 10;
+
+$icon-sizes: (
+  1: $icon-size-1,
+  2: $icon-size-2,
+  3: $icon-size-3,
+  4: $icon-size-4,
+  5: $icon-size-5,
+  6: $icon-size-6,
+  7: $icon-size-7,
+  8: $icon-size-8,
+  9: $icon-size-9,
+  10: $icon-size-10,
+  11: $icon-size-11,
+  12: $icon-size-12,
+  13: $icon-size-13,
+  14: $icon-size-14,
+  15: $icon-size-15,
+  16: $icon-size-16,
+  17: $icon-size-17,
+  18: $icon-size-18,
+  19: $icon-size-19,
+  20: $icon-size-20,
+  21: $icon-size-21
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "icon-size": (
+      property: font-size,
+      class: is,
+      values: $icon-sizes,
+    ),
+  )
+);
+
+//Options
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: true !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-prefers-reduced-motion-media-query: true !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+$enable-validation-icons: true !default;
+
+/** Busy Button CSS Start **/
+button[disabled][busy]
+{
+    cursor: wait;
+    pointer-events: all !important;
+}
+/** Busy Button CSS End **/
+
+/** Custom Theme CSS Start **/
+*.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  /*
+    Introduced in IE 10.
+  */
+  -ms-user-select: none;
+  user-select: none;
+}
+html, body
+{
+  height: 100vh !important;
+  min-height: 100vh !important;
+  max-height: 100vh !important;
+  max-width: 100vw !important;
+  overflow-y: hidden;
+}
+// min width for entire layout
+html, body, main
+{
+  min-width: 286px !important;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+*{
+  scrollbar-width: none;
+  scrollbar-color: $light;
+}
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar 
+{
+  width: .9rem;
+}
+*::-webkit-scrollbar-track 
+{
+  background: $light;
+}
+*::-webkit-scrollbar-thumb 
+{
+  background-color: $gray-light;
+  border-radius: 20px;
+  border: 0px none #ffffff;
+}
+
+//Menus
+$main-menu-height: 3.5rem;
+$main-footer-height: 6rem;
+
+//ToDo: if footer in main then if footer not in main then
+
+footer.main-footer
+{
+  position: relative;
+  bottom: 0;
+  // top: calc(100vh - $main-footer-height);
+  height: $main-footer-height;
+  margin: 0 !important;
+}
+main
+{
+  position: absolute;
+  top: $main-menu-height;
+  max-height: calc(100vh - $main-menu-height); // - $main-footer-height);
+  min-height: calc(100vh - $main-menu-height); // - $main-footer-height);
+  height: calc(100vh - $main-menu-height); // - $main-footer-height);
+  overflow-y: auto;
+}
+.main-content
+{
+  display: table-cell;
+  margin: 0 !important;
+  padding: 1rem !important;
+  min-height: calc(100vh - $main-menu-height); // - $main-footer-height);
+  height: calc(100vh - $main-menu-height); // - $main-footer-height);
+}
+
+.align-self-center
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/** Custom Theme CSS End **/
+
+//Standard Bootstrap Libraries
+
+    //"Optional" Libraries
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/grid";
+
+@import "../node_modules/bootstrap/scss/alert";
+@import "../node_modules/bootstrap/scss/badge";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/dropdown";
+
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/images";
+
+@import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/offcanvas";
+
+@import "../node_modules/bootstrap/scss/pagination";
+@import "../node_modules/bootstrap/scss/placeholders";
+@import "../node_modules/bootstrap/scss/popover";
+@import "../node_modules/bootstrap/scss/progress";
+
+@import "../node_modules/bootstrap/scss/spinners";
+@import "../node_modules/bootstrap/scss/tables";
+@import "../node_modules/bootstrap/scss/toasts";
+@import "../node_modules/bootstrap/scss/tooltip";
+@import "../node_modules/bootstrap/scss/transitions";
+
+//Custom Components
+@import "components/bs-sidebar-menu.scss";
+@import "components/bs-form-check.scss";
+@import "components/bs-carousel.scss";
+@import "components/bs-blog.scss";
+@import "components/bs-top-nav.scss";
+@import "components/static-header-sticky-footer.scss";
+
+//Final Required Libraries
+@import "../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../node_modules/bootstrap/scss/bootstrap-utilities";
+@import "../node_modules/bootstrap/scss/bootstrap-grid";
+
+h1 {
+    font-weight: $font-weight-bolder;
+}
+h2 {
+    font-weight: $font-weight-bold;
+}
+h3 {
+    font-weight: $font-weight-normal;
+}
+h4, h5, h6 {
+    font-weight: $font-weight-normal;
+}

@@ -1,0 +1,33 @@
+.side-menu-wrapper
+{
+    display: table-cell;
+    margin: 0 !important;
+    width: auto;
+}
+.side-menu
+{
+    top: 0 !important;
+    position: sticky;
+    height: calc(100vh - $main-menu-height - $main-footer-height);
+    max-height: calc(100vh - $main-menu-height - $main-footer-height);
+    height: 100%;
+    max-width: 10rem;
+    overflow-y: scroll;
+
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-out, max-width 0.5s ease-out;
+
+    // Hide Scrollbar
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+// Hide Scrollbar
+.side-menu::-webkit-scrollbar
+{
+    display: none;
+}
+.side-menu.collapsed .link-text
+{
+    display: none;
+}
